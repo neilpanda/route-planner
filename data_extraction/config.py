@@ -1,0 +1,8 @@
+import os
+import dotenv
+
+dotenv.load_dotenv()
+TFL_API_KEY = os.getenv("TFL_API_KEY")
+OPENWEATHER_KEY = os.getenv("OPENWEATHER_KEY")
+MAXIMUM_WALKING_DISTANCE_METERS = 10000 # m
+
