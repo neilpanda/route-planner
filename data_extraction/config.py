@@ -1,3 +1,8 @@
+"""
+Acts as a hub for all global constants and configurations.
+
+Any changes made to these constants and/or configurations should be altered here.
+"""
 import os
 import dotenv
 
