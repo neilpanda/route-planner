@@ -25,3 +25,8 @@ def fetch_tfl_data(end_point, extra_params=None):
     except requests.exceptions.HTTPError as err:
         print(f"API error: {err}")
         return None
+    
+# parsers:
+
+def parse_bikes():
+    pass
