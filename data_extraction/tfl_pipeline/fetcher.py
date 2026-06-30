@@ -1,6 +1,5 @@
-from config import TFL_API_KEY
+from data_extraction.config import TFL_API_KEY
 from typing import Any
-import pandas as pd
 import requests
 
 BASE_TFL_URL = "https://api.tfl.gov.uk"
@@ -39,8 +38,3 @@ def fetch_tfl_data(end_point: str, extra_params: dict[str, Any] | None = None):
     except requests.exceptions.HTTPError as err:
         print(f"API error: {err}")
         return None
-
-# parsers:
-
-def parse_bikes(raw_json: dict[str, float] | list[Any]):
-    pass
