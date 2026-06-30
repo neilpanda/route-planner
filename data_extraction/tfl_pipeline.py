@@ -42,5 +42,5 @@ def fetch_tfl_data(end_point: str, extra_params: dict[str, Any] | None = None):
 
 # parsers:
 
-def parse_bikes(raw_json):
+def parse_bikes(raw_json: dict[str, float] | list[Any]):
     pass
