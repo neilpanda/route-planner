@@ -1,5 +1,3 @@
-import pytest
-
 class TestFetcher():
 
     def test_fetch_tfl_data_exists(self):
